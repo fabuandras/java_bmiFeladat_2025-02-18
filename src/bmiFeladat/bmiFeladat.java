@@ -11,17 +11,17 @@ public class bmiFeladat {
     }
     
     public static void bmiFeladat() {
-        kiir("BMI kiszámítása");
-        System.out.println("-------------------------");
+        kiir("BMI kiszámítása\n");
+        kiir("-------------------------\n");
         int m = beker("Testmagasság (cm)");
         int t = beker("Testtömeg (kg)");
         double bmi = bmiSzamit(t, m);
-        System.out.println("-------------------------");
+        kiir("-------------------------\n");
         ertekeles(bmi);
     }
     
     public static void kiir(String szoveg){
-        System.out.println(szoveg);
+        System.out.print(szoveg);
     }
     
     public static double bmiSzamit(int t, int m){
@@ -34,7 +34,7 @@ public class bmiFeladat {
     }
     
     public static void ertekeles(double bmi){
-        kiir("Az Ön BMI értéke: " + bmi);
+        kiir("Az Ön BMI értéke: " + bmi + "\n");
         if (bmi < 20) {
             System.out.println("- Sovány");
         }
