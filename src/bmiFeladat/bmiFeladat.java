@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class bmiFeladat {
 
+    static final Scanner scn = new Scanner(System.in);
+    
     public static void main(String[] args) {
         bmiFeladat();
     }
@@ -27,7 +29,6 @@ public class bmiFeladat {
     }
     
     public static int beker(String kerdes){
-        Scanner scn = new Scanner(System.in);
         kiir(kerdes + ": ");
         return scn.nextInt();
     }
